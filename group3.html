@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hand of Hope (HOH) - Smart Cane Project</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Cập nhật bảng màu khớp với tài liệu Brand Color hệ thống
+                        primary: '#4A69B1',    // 7683CP Blue - Đậm đà, tin cậy
+                        secondary: '#90C73E',  // 2290CP Green - Tươi tắn, hy vọng
+                        accent: '#1D8ECE'     // 2995CP/2194CP Blue - Công nghệ, hòa nhập
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(
+                135deg,
+                rgba(74, 105, 177, 0.95), /* primary */
+                rgba(29, 142, 206, 0.90)  /* accent */
+            );
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+        }
+
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+
+        .btn-hover:hover {
+            transform: translateY(-2px) scale(1.03);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+
+            <a href="#home" class="flex items-center gap-3">
+                <img src="img/logo.png" alt="Hand of Hope Logo" class="h-10 md:h-12 w-auto object-contain" />
+                <h1 class="text-xl md:text-2xl font-bold text-accent">
+                    Hand of Hope (HOH)
+                </h1>
+            </a>
+
+            <div class="hidden md:flex gap-8 font-medium">
+                <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="hover:text-primary transition-colors">About Project</a>
+                <a href="#demo-video" class="hover:text-primary transition-colors">Demo Video</a>
+                <a href="#products" class="hover:text-primary transition-colors">Our Products</a>
+                <a href="#team" class="hover:text-primary transition-colors">Our Team</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg text-white min-h-screen flex items-center">
+
+        <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Hand of Hope:
+                <br>
+                <span class="text-secondary">
+                    Empowering the Visually Impaired with AI Technology
+                </span>
+            </h1>
+
+            <p class="max-w-4xl mx-auto text-lg md:text-xl text-gray-100 mb-10">
+                A breakthrough smart cane project from FPT University Can Tho,
+                designed to bring independence and safety to the blind community.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+
+                <a href="#products"
+                   class="btn-hover bg-secondary text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:opacity-90">
+                    Explore Products
+                </a>
+
+                <a href="#demo-video"
+                   class="btn-hover border-2 border-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-primary">
+                    Watch Demo Video
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary">
+                    Project Overview & Implementation
+                </h2>
+
+                <p class="text-gray-600 mt-4">
+                    The Hand of Hope project is developed through four strategic stages.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-md card-hover border-t-4 border-accent">
+                    <div class="text-4xl mb-3">🚀</div>
+                    <h3 class="font-bold text-lg mb-2 text-primary">
+                        Stage 1
+                    </h3>
+                    <p class="text-sm text-gray-600">
+                        Project Initialization: research user needs, technology feasibility,
+                        and smart cane concept design.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-md card-hover border-t-4 border-accent">
+                    <div class="text-4xl mb-3">🛠️</div>
+                    <h3 class="font-bold text-lg mb-2 text-primary">
+                        Stage 2
+                    </h3>
+                    <p class="text-sm text-gray-600">
+                        MVP Development & Testing: hardware integration,
+                        AI features, and real-world user testing.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-md card-hover border-t-4 border-accent">
+                    <div class="text-4xl mb-3">💰</div>
+                    <h3 class="font-bold text-lg mb-2 text-primary">
+                        Stage 3
+                    </h3>
+                    <p class="text-sm text-gray-600">
+                        Commercialization with 30M VND funding,
+                        production scaling and community outreach.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow-md card-hover border-t-4 border-accent">
+                    <div class="text-4xl mb-3">🌏</div>
+                    <h3 class="font-bold text-lg mb-2 text-primary">
+                        Stage 4
+                    </h3>
+                    <p class="text-sm text-gray-600">
+                        Future Expansion into a Social Enterprise with
+                        mobile apps, AI upgrades and regional growth.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="demo-video" class="py-20 bg-slate-900 text-white scroll-mt-16">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            
+            <div class="mb-10">
+                <h2 class="text-4xl font-bold text-secondary mb-4">
+                    Project Introduction & Demo Video
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Take a closer look at how the Hand of Hope smart cane operates in real environments and discover our team's mission.
+                </p>
+            </div>
+
+            <div class="relative mx-auto max-w-4xl rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-800 bg-black aspect-video">
+                <video class="w-full h-full object-cover" controls preload="metadata">
+                    <source src="clip.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-gray-100">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary">
+                    Our Products
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div class="bg-white rounded-3xl shadow-lg p-8 card-hover">
+
+                    <h3 class="text-2xl font-bold text-accent mb-4">
+                        Hand of Hope - Standard Version
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-700">
+                        <li><span class="text-secondary mr-1">✓</span> Ultrasonic obstacle detection</li>
+                        <li><span class="text-secondary mr-1">✓</span> Smart vibration alerts for obstacle detection</li>
+                        <li><span class="text-secondary mr-1">✓</span> GPS location tracking</li>
+                    </ul>
+
+                    <div class="mt-6 text-3xl font-bold text-primary">
+                        3,490,000 VNĐ
+                    </div>
+
+                    <button class="btn-hover mt-6 bg-primary text-white px-6 py-3 rounded-xl font-semibold">
+                        Pre-order Now
+                    </button>
+
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-lg p-8 card-hover border-4 border-secondary">
+
+                    <h3 class="text-2xl font-bold text-primary mb-4">
+                        Hand of Hope - Advance Version
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-700">
+                        <li><span class="text-secondary mr-1">✓</span> AI Camera</li>
+                        <li><span class="text-secondary mr-1">✓</span> Currency Recognition</li>
+                        <li><span class="text-secondary mr-1">✓</span> OCR Text Reading</li>
+                        <li><span class="text-secondary mr-1">✓</span> SOS Telegram Integration</li>
+                        <li><span class="text-secondary mr-1">✓</span> Waterproof Build</li>
+                    </ul>
+
+                    <div class="mt-6 text-3xl font-bold text-secondary">
+                        5,290,000 VNĐ
+                    </div>
+
+                    <button class="btn-hover mt-6 bg-secondary text-white px-6 py-3 rounded-xl font-semibold">
+                        Pre-order Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="team" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">Our Team</h2>
+                <p class="text-gray-600">Group 3 - EXE201_G01_SU26 | FPT University Can Tho</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-md card-hover">
+                    <img src="img/avatar_dung.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover bg-gray-300">
+                    <h3 class="font-bold">Bùi Trần Hoàng Dũng</h3>
+                    <p class="text-gray-500 text-sm">CE181851</p>
+                    <p class="text-accent mt-2 font-semibold">
+                        CEO - Project Director
+                    </p>
+                    <p class="text-sm text-gray-600 mt-3">
+                        Project Management, Team Coordination, Stakeholder Communication
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-md card-hover">
+                    <img src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/508609725_697125919597358_3680950558986091802_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=n6MGHOVyPC4Q7kNvwExUxh6&_nc_oc=AdpcOs9fPhX0A0xBzBaNACSAmGoDcPalQ8rmP0iUqCBodNkl7Xs2WtS-scDyP_3X9RQ&_nc_zt=23&_nc_ht=scontent.fsgn2-4.fna&_nc_gid=R_IONK5KyG1HppnxA-4sCw&_nc_ss=7b2a8&oh=00_Af_eGOUcsv0AOvQg0AEugVkBaebp71L3lxVZU-a_QORElQ&oe=6A21AD86" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="font-bold">Hồ Thị Thanh Trúc</h3>
+                    <p class="text-gray-500 text-sm">CE181115</p>
+                    <p class="text-accent mt-2 font-semibold">
+                        CTPO - Technology & Product Director
+                    </p>
+                    <p class="text-sm text-gray-600 mt-3">
+                        Smart Cane Development, AI Integration, Product Architecture
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-md card-hover">
+                    <img src="img/avatar_loan.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover bg-gray-300">
+                    <h3 class="font-bold">Trần Thị Kiều Loan</h3>
+                    <p class="text-gray-500 text-sm">CS181192</p>
+                    <p class="text-accent mt-2 font-semibold">
+                        Product Development Specialist
+                    </p>
+                    <p class="text-sm text-gray-600 mt-3">
+                        User Experience Design, Product Testing, Prototype Improvement
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-md card-hover">
+                    <img src="img/avatar_thao.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover bg-gray-300">
+                    <h3 class="font-bold">Nguyễn Thị Ngọc Thảo</h3>
+                    <p class="text-gray-500 text-sm">CS180338</p>
+                    <p class="text-accent mt-2 font-semibold">
+                        CRO - User Research Director
+                    </p>
+                    <p class="text-sm text-gray-600 mt-3">
+                        User Research, Surveys, Interviews, Accessibility Insights
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-md card-hover">
+                    <img src="img/avatar_vlong.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover bg-gray-300">
+                    <h3 class="font-bold">Võ Hoàng Long</h3>
+                    <p class="text-gray-500 text-sm">CS180502</p>
+                    <p class="text-accent mt-2 font-semibold">
+                        CMO - Marketing & Partnership Director
+                    </p>
+                    <p class="text-sm text-gray-600 mt-3">
+                        Branding, Communication Strategy, Sales & Partnerships
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-md card-hover">
+                    <img src="img/avatar_nlong.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover bg-gray-300">
+                    <h3 class="font-bold">Nguyễn Thành Long</h3>
+                    <p class="text-gray-500 text-sm">CE190050</p>
+                    <p class="text-accent mt-2 font-semibold">
+                        CDO - Design & Branding Director
+                    </p>
+                    <p class="text-sm text-gray-600 mt-3">
+                        Product Design, 3D Modeling, UX/UI & Brand Identity
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-6 text-center shadow-md card-hover sm:col-span-2 lg:col-span-3 max-w-md mx-auto w-full">
+                    <img src="img/avatar_nhi.jpg" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover bg-gray-300">
+                    <h3 class="font-bold">Lê Thị Yến Nhi</h3>
+                    <p class="text-gray-500 text-sm">CS180606</p>
+                    <p class="text-accent mt-2 font-semibold">
+                        CFO/CSO - Finance & Strategy Director
+                    </p>
+                    <p class="text-sm text-gray-600 mt-3">
+                        Financial Planning, Business Strategy, Legal & Social Impact
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-gray-100">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary">
+                    Project Media Gallery
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="img/c1.jpg"
+                        class="w-full h-60 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-sm">
+                             Group members working together to develop the Smart Cane Project for the Visually Impaired at FPT University Can Tho.
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="img/c3.jpg"
+                        class="w-full h-60 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-sm">
+                            Pitching the Hand Of Hope project for startup funding at FPT University.
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="img/c2.jpg"
+                        class="w-full h-60 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-sm">
+                            Hand Of Hope successfully received investment support from FPT University to continue product development and community activities.
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+
+            <h2 class="text-4xl font-bold text-primary mb-6">
+                Contact Us
+            </h2>
+
+            <p class="text-lg text-gray-600">
+                Interested in our project or partnership opportunities?
+            </p>
+
+            <div class="mt-8 space-y-3">
+                <p>📧 info.handofhope@gmail.com</p>
+                <p>📍 FPT University Can Tho</p>
+
+                <p>
+                    <a href="https://www.facebook.com/HandOfHopeVn/"
+                       target="_blank"
+                       class="text-blue-600 hover:text-blue-500 font-medium inline-flex items-center transition">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             class="w-5 h-5 mr-2"
+                             fill="currentColor"
+                             viewBox="0 0 24 24">
+                            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.019 4.388 11.009 10.125 11.927v-8.437H7.078v-3.49h3.047V9.413c0-3.007 1.792-4.669 4.533-4.669 1.313 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.927-1.956 1.878v2.255h3.328l-.532 3.49h-2.796V24C19.612 23.082 24 18.092 24 12.073z"/>
+                        </svg>
+                        Hand of Hope (HOH) Facebook Fanpage
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="bg-primary text-white py-8">
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <h3 class="font-bold text-xl mb-2">
+                Hand of Hope (HOH)
+            </h3>
+
+            <p class="text-gray-200 mb-4">
+                Smart Cane Project for the Visually Impaired
+            </p>
+
+            <div class="flex justify-center gap-6 mb-4">
+                <a href="https://www.facebook.com/HandOfHopeVn/" target="_blank" class="hover:text-secondary transition-colors">
+                    Facebook Fanpage
+                </a>
+
+                <a href="mailto:info.handofhope@gmail.com" class="hover:text-secondary transition-colors">
+                    Email
+                </a>
+            </div>
+
+            <p class="text-gray-300 text-sm">
+                © 2026 Hand of Hope (HOH). All Rights Reserved.
+                <br class="md:hidden"> Developed by Group 6 - EXE201_G01_SU26, FPT University Can Tho.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
